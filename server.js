@@ -437,12 +437,7 @@ app.get('/', (req, res) => {
       isSteamAuth = true;
       steamLoginBtn.innerHTML = '✅ Вход выполнен';
       steamLoginBtn.style.background = '#2a3f5a';
-      steamProfileInfo.innerHTML = `
-        <div class="steam-profile" style="display:inline-flex;">
-          <img src="https://avatars.steamstatic.com/3f4d8f9a2c1b5e6d7a8f9c0b1d2e3f4a5b6c7d8e_medium.jpg" alt="avatar" />
-          <span class="name">ХламоХабовец</span>
-          <span style="color:#888;font-size:12px;">STEAM_0:1:12345678</span>
-        </div>
+      steamProfileInfo.innerHTML = '<div class="steam-profile" style="display:inline-flex;"><img src="https://avatars.steamstatic.com/3f4d8f9a2c1b5e6d7a8f9c0b1d2e3f4a5b6c7d8e_medium.jpg" alt="avatar" /><span class="name">ХламоХабовец</span><span style="color:#888;font-size:12px;">STEAM_0:1:12345678</span></div>';
       `;
       alert('🔷 Вы вошли в Steam как ХламоХабовец! Теперь ваши скины подгружены.');
       // Добавляем скинов в инвентарь
